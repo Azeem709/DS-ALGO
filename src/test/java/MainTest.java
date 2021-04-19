@@ -1,15 +1,11 @@
-////import ds.LinkedList;
-////import misc.Sum;
-////import org.junit.Test;
-////import static org.junit.Assert.assertEquals;
-////
-////
-////public class MainTest {
-////
-////    LinkedList linkedList = new LinkedList();
-////    @Test
-////    public void test()
-////    {
-//////        assertEquals(linkedList.insert(20000));
-////    }
-//}
+import ds.LinkedList;
+import misc.BitWiseOperatorsMis;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+
+public class MainTest {
+
+
+}
