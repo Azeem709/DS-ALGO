@@ -1,13 +1,22 @@
 package misc;
 
+
 public class BitWiseOperatorsMis {
 
-    /*
-    we can find oot odd
+     BitWiseOperatorsMis(){}
 
 
+    /**
+     * We can check number for odd useing bitwise AND operator with the input number
+     * if number is odd it will produce 1
+     * ex input number 5
+     *   binary     = 0 1 0 1
+     *     AND      = 0 0 0 1
+     *    Result(1) = 0 0 0 1
+     * @param num
+     * @return
      */
-    public static boolean isOdd(int num)
+    public static boolean isOddwithANDOperator(int num)
     {
       int result = num & 1;
       if(result == 1)
@@ -15,6 +24,25 @@ public class BitWiseOperatorsMis {
       else
           return false;
     }
+
+
+    /**
+     * XOR operator(^)(returns TRUE if both bits are different)
+     * @param
+     * * @return
+     */
+    public static int isOddOccurenceUsingXOR(int inputArr[]){
+        int result = 0;
+        for(int i=0;i<inputArr.length;i++){
+            result ^= inputArr[i];
+        }
+        return result;
+    }
+
+
+
+
+
 
     public static int divideBy2(int num)
     {
