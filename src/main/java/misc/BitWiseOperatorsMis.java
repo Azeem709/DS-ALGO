@@ -40,15 +40,22 @@ public class BitWiseOperatorsMis {
     }
 
 
-
-
-
-
+    /**
+     * Right shift operator can be used to divide by 2
+     * @param num
+     * @return
+     */
     public static int divideBy2(int num)
     {
         return num >>= 1;
     }
 
+
+    /**
+     * left shift operator can be used to multiply number with 2
+     * @param num
+     * @return
+     */
     public static int multiplyBy2(int num)
     {
         return num <<= 1;

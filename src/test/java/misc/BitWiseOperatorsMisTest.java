@@ -38,4 +38,12 @@ class BitWiseOperatorsMisTest {
     {
         Assertions.assertEquals(BitWiseOperatorsMis.isOddOccurenceUsingXOR(arr),10,"IS Odd Number");
     }
+
+    @Test()
+    @DisplayName("Divide by 2")
+    public void divideNumBy2()
+    {
+        Assertions.assertEquals(BitWiseOperatorsMis.isOddOccurenceUsingXOR(arr),10,"IS Odd Number");
+    }
+
 }
