@@ -1,5 +1,7 @@
-package twoPointers;
+package dynamicProgramming.twoPointers;
 
+
+import java.util.HashSet;
 
 /**
  * Given an array return if two elements sum is equal to the required sum
@@ -28,8 +30,31 @@ public class TwoSum {
         return false;
     }
 
+
+    /**
+     * a+b = c => b = c-a
+     * 1,2 sim=3
+     * @param ar
+     * @param sum
+     */
+    static void printAllPairsHavingSum(int[] ar,int sum){
+
+        HashSet<Integer> set = new HashSet<>();
+        for(int i=0;i<ar.length;i++){
+
+            int temp = sum - ar[i];
+            if(set.contains(temp))
+                System.out.println("pars [] " + temp +" "+ar[i]);
+
+            set.add(ar[i]);
+
+        }
+    }
+
         public static void main(String ar[]){
             System.out.println("is two su,= " + isTwoSum(new int[]{1,5,6,7,8},71));
+
+            printAllPairsHavingSum(new int[]{1,5,1,7,8,9},6);
         }
 
     }
